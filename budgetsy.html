@@ -4,13 +4,17 @@
 <head>
   <meta charset="utf-8">
   <title>Nishita Joshi</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <script src="https://kit.fontawesome.com/04854e1ab1.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap" rel="stylesheet">
 </head>
 
 <body>
   <!-- header -->
   <header>
-    <div>
+    <div class="navbar" id="navbar">
       <?xml version="1.0" encoding="UTF-8" ?>
       <svg width="157px" height="160px" viewBox="0 0 157 160" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
         <title>Artboard</title>
@@ -41,17 +45,17 @@
     <div>
       <h1>budgetsy</h1>
     </div>
-    <div>
+    <div class="project" id="project">
       <!-- about project -->
       <div>
         <h2>About the project</h2>
         <div>
-          <h3>Overview</h3>
+          <p>Overview</p>
           <p>To help people save money quickly for a big purchase and manage ther finances. Making saving money a priority is never fun, but it can be made easier thanks to budgetsy. The 5 W’s are questions whose answers are considered basic in
             information gathering or problem solving. </p>
-          <h3>Timeline</h3>
+          <p>Timeline</p>
           <p>3 Weeks</p>
-          <h3>Role</h3>
+          <p>Role</p>
           <p>User Research, User Interface Design, Visual Design, Branding</p>
         </div>
       </div>
@@ -79,11 +83,11 @@
             <h2>Identifying the ideal user</h2>
           </div>
           <div>
-            <h1>63%</h1>
+            <p>63%</p>
             <p>Among smartphone users in the U.S., nearly two-thirds have at least one financial app on their smartphone.</p>
           </div>
           <div>
-            <h1>17%</h1>
+            <p>17%</p>
             <p>Users have at least one stand alone budgeting app.</p>
           </div>
           <picture>
@@ -115,7 +119,7 @@
 
       <!-- user flow -->
       <div>
-        <h1>User flow</h1>
+        <h2>User flow</h2>
         <picture>
           <source srcset="img/budgetsy/user-feedback@1.png" media="(max-width:767px)">
           <img src="img/budgetsy/user-feedback@2.png" alt="user feedback">
@@ -129,7 +133,7 @@
 
       <!-- branding -->
       <div>
-        <h1>Branding</h1>
+        <h2>Branding</h2>
         <picture>
           <source srcset="img/budgetsy/style-guide@1.png" media="(max-width:767px)">
           <img src="img/budgetsy/style-guide@2.png" alt="style guide">
@@ -139,9 +143,9 @@
       <!-- wireframes -->
       <div>
         <div>
-          <h1>Wireframes</h1>
+          <h2>Wireframes</h2>
           <div>
-            <h3>Security is key</h3>
+            <p>Security is key</p>
             <p>Entering a 4 - digit numeric password or using Face ID to access your profile everytime you sign in.</p>
             <picture>
               <source srcset="img/budgetsy/wireframes-1@1.png" media="(max-width:767px)">
@@ -150,7 +154,7 @@
           </div>
         </div>
         <div>
-          <h3>Seamless onboarding</h3>
+          <p>Seamless onboarding</p>
           <p>When the application is first downloaded and a user creates an account, the onboarding screens serve as a guide for new users. This helps users familiarize with the core features and functionality of the application. </p>
           <picture>
             <source srcset="img/budgetsy/wireframes-2@1.png" media="(max-width:767px)">
@@ -158,7 +162,7 @@
           </picture>
         </div>
         <div>
-          <h3>Financial overview</h3>
+          <p>Financial overview</p>
           <p>The Home screen provides an overview of your account information, saving goals and budget. It is clean, minimal and displays important information in a well organized and competent way.</p>
           <picture>
             <source srcset="img/budgetsy/wireframes-3@1.png" media="(max-width:767px)">
@@ -166,7 +170,7 @@
           </picture>
         </div>
         <div>
-          <h3>Creating saving goals</h3>
+          <p>Creating saving goals</p>
           <p>You need to input some basic information to create a saving goal. You can view a short summaty of your most recennt saving goals on the home screeen or a detailed summary on the saving goals page.</p>
           <picture>
             <source srcset="img/budgetsy/wireframes-4@1.png" media="(max-width:767px)">
@@ -176,7 +180,7 @@
           </picture>
         </div>
         <div>
-          <h3>Statistics and Transactions</h3>
+          <p>Statistics and Transactions</p>
           <p>The app makes use of graphs and piecharts to provide you with an overview all your financial data. Wherever important, we also provide details of your finanical information.</p>
           <picture>
             <source srcset="img/budgetsy/wireframes-6@1.png" media="(max-width:767px)">
@@ -187,18 +191,19 @@
 
       <!-- mockups -->
       <div>
-        <h3>Mockups</h3>
+        <h2>Mockups</h2>
         <picture>
           <source srcset="img/budgetsy/mockup-1@1.png" media="(max-width:767px)">
           <img src="img/budgetsy/mockup-1@2.png" alt="mockup">
         </picture>
       </div>
-    </div>
+    </divs>
   </main>
 
 
   <!-- footer -->
-  <footer>
+  <footer class="contact" id="contact">
+    <div class="social">
     <!-- social media placeholders -->
     <a href="https://www.linkedin.com/in/nishita-joshi-385082a0/" target="blank">
       <i class="fab fa-linkedin-in"></i>
@@ -213,5 +218,7 @@
     <div>
       <p>Copyright NISHITA JOSHI 2020</p>
     </div>
+    </div>
   </footer>
 </body>
+</html>

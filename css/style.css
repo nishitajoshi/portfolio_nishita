@@ -5,6 +5,63 @@ Secondary (dark blue):#252847
 Secondary (yellow): #FFD984
 Secondary: (light blue):#7DB8C4
 */
+* {
+  box-sizing: border-box;
+}
+
+header {
+  background-color: white;
+  padding: 10px 0;
+  text-align: center;
+  box-shadow: 2px 2px 4px 0px rgba(20, 29, 22, 0.49);
+  width: 100%;
+  position: fixed;
+  display: inline-block;
+}
+
+.logo {
+  max-width: 50px;
+}
+
+main {
+  padding-top: 133px;
+}
+
+nav>ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav>ul>li {
+  display: inline-block;
+}
+
+nav>ul>li>a {
+  padding: 0 15px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #252847;
+  text-decoration: none;
+}
+
+nav>ul>li>a:hover {
+  padding: 0 15px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #f06b52;
+}
+
+nav>ul>li>a:visited {
+  padding: 0 15px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #252847;
+}
+
+.section {
+  padding: 10px 15px;
+}
+
 body {
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 16px;
@@ -18,13 +75,13 @@ h1, h2, h3, h4 {
 }
 
 h1 {
-  font-size: 2.75em;
+  font-size: 2.55em;
   font-weight: 700;
 }
 
 h2 {
-  font-size: 2.25em;
-  font-weight: 700;
+  font-size: 2.0em;
+  font-weight: 400;
 }
 
 h3 {
@@ -46,21 +103,20 @@ a {
   text-decoration: none;
 }
 
-a:visited {
-  color: #252847;
-}
-
 a:hover,
 a:focus {
   color: #f06b52;
-  text-decoration: underline;
+}
+
+a:visited {
+  color: #252847;
 }
 
 a:active {
   color: #7DB8C4;
 }
 
-.button.project{
+.button.project {
   display: inline-block;
   background-color: #f06b52;
   color: #ffffff;
@@ -68,27 +124,110 @@ a:active {
   padding: 8px;
   border-radius: 2px;
   border-bottom: 2px solid #f06b52;
+  margin-bottom: 20px;
 }
 
-.button.project:hover
-{
+.button.project:hover {
   background-color: #f06b52;
   color: #ffffff;
   opacity: 0.8;
   text-decoration: none;
 }
 
-.button.email{
+.button.email {
   background-color: transparent;
   color: #f06b52;
   font-weight: 400;
   padding: 8px;
   border-radius: 2px;
-  border: 1.6px solid #f06b52;
+  border: 2px solid #f06b52;
 }
 
 .button.email:hover {
   background-color: #f06b52;
   color: #ffffff;
   text-decoration: none;
+}
+
+.row {
+  margin: 20px 0;
+}
+
+#hero {
+  text-align: center;
+  background-color: #7DB8C4;
+  color: white;
+  padding: 10px 10px 15px 10px;
+  display: inline-block;
+  width: 100%;
+}
+
+#project h3 {
+  margin: 0 auto;
+}
+
+#skills h3 {
+  margin: 5px;
+}
+
+
+/* footer */
+
+#email {
+  margin: 20px 0;
+}
+
+#contact {
+  text-align: center;
+  background-color: #FFD984;
+  padding: 22px;
+}
+
+#copyright {
+  font-size: 12px;
+}
+
+/* about me */
+
+#about{
+  padding: 15px 0px 0px 15px;
+}
+
+#skills h2{
+  font-weight: 700;
+}
+/* budgetsy */
+
+#title{
+  background: #47a7a0;
+  padding: 20px;
+  text-align: center;
+  color: white;
+}
+
+#title h1{
+  font-weight: 400;
+}
+
+.container{
+  padding: 8px;
+}
+
+#boldtext{
+  font-weight: bold;
+}
+
+#screeninfo{
+  margin-bottom: 45px;
+}
+
+#data{
+  font-size: 3.5em;
+  margin: 0 auto;
+  text-align: center;
+  width: 100%;
+}
+
+#user{
+  text-align: center;
 }

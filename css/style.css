@@ -171,10 +171,10 @@ a:active {
   margin: 20px 0;
 }
 
-#contact {
+#contact{
   text-align: center;
-  background-color: #FFD984;
-  padding: 22px;
+  background: #FFD984;
+  padding: 10px 22px;
 }
 
 #copyright {
@@ -197,7 +197,7 @@ a:active {
   margin-bottom: 45px;
 }
 
-.screeninfo span{
+.screeninfo span {
   font-weight: bold;
 }
 
@@ -205,7 +205,61 @@ a:active {
   font-size: 3.55em;
   text-align: center;
 }
+
 .user {
   text-align: center;
   padding: 0 35px;
 }
+
+/* Medium Devices */
+@media only screen and (min-width: 640px) {
+  header {
+    text-align: unset;
+    padding: 20px 0 13px;
+  }
+
+  nav {
+    width: auto;
+    float: right;
+    margin-top: 4px;
+  }
+
+  main {
+    padding-top: 99px;
+  }
+
+  body {
+    font-size: 18px;
+  }
+
+  #hero {
+    padding: 40px;
+  }
+
+  .row::after {
+    content:"";
+    clear: both;
+    display: table;
+  }
+
+  .col-md-6 {
+    width: 50%;
+  }
+
+  [class*=col-] {
+    float: left;
+    padding: 0 10px;
+  }
+
+  #contact{
+    padding: 20px 100px;
+  }
+
+}
+
+
+/* Large Devices */
+@media only screen and (min-width: 1024px) {}
+
+/* XL Devices */
+@media only screen and (min-width: 1440px) {}

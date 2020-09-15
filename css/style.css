@@ -5,6 +5,7 @@ Secondary (dark blue):#252847
 Secondary (yellow): #FFD984
 Secondary: (light blue):#7DB8C4
 */
+
 * {
   box-sizing: border-box;
 }
@@ -125,6 +126,7 @@ a:active {
   border-radius: 2px;
   border-bottom: 2px solid #f06b52;
   margin-bottom: 20px;
+  transition-duration: 0.5s opacity;
 }
 
 .button.project:hover {
@@ -153,7 +155,7 @@ a:active {
   margin: 20px 0;
 }
 
-#hero {
+.hero {
   text-align: center;
   background-color: #7DB8C4;
   color: white;
@@ -171,10 +173,12 @@ a:active {
   margin: 20px 0;
 }
 
-#contact{
+.information {
   text-align: center;
   background: #FFD984;
   padding: 10px 22px;
+  width: 100%;
+  display: inline-block;
 }
 
 #copyright {
@@ -184,7 +188,7 @@ a:active {
 /* budgetsy */
 #title {
   background: #47a7a0;
-  padding: 20px;
+  padding: 60px 20px;
   text-align: center;
   color: white;
 }
@@ -209,6 +213,60 @@ a:active {
 .user {
   text-align: center;
   padding: 0 35px;
+}
+
+/* animation CSS */
+
+#animate {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
+@keyframes color-change {
+  0% {
+    fill: #edc655;
+  }
+
+  50% {
+    fill: #fcffad;
+  }
+
+  100% {
+    fill: #f76414;
+  }
+}
+
+.sun {
+  animation: 4s color-change infinite alternate linear;
+}
+
+@keyframes cloud-move {
+  from {
+    transform: translate(0, 50px);
+  }
+
+  to {
+    transform: translate(200px, 50px);
+  }
+}
+
+.cloud-front {
+  animation: 10s cloud-move infinite alternate linear;
+}
+
+@keyframes cloud-move-reverse {
+  from {
+    transform: translate(446px, 48px);
+  }
+
+  to {
+    transform: translate(100px, 48px);
+  }
+}
+
+.cloud-back {
+  animation: 15s cloud-move-reverse infinite alternate linear;
 }
 
 /* Medium Devices */
@@ -237,7 +295,7 @@ a:active {
   }
 
   .row::after {
-    content:"";
+    content: "";
     clear: both;
     display: table;
   }
@@ -251,15 +309,64 @@ a:active {
     padding: 0 10px;
   }
 
-  #contact{
+  .information {
     padding: 20px 100px;
+  }
+
+  .navbar {
+    margin: 5px 20px;
+  }
+
+  #about-title h1{
+    margin: 0 10px;
+  }
+}
+
+/* Large Devices */
+@media only screen and (min-width: 1024px) {
+  .section {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #skills-title {
+    text-align: left;
+  }
+
+  .col-lg-7 {
+    width: 60%;
+  }
+
+  .col-lg-5 {
+    width: 40%;
+  }
+
+  .navbar {
+    margin: 5px 20px;
+  }
+
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+  .column {
+    margin: 20px 0;
+  }
+
+  #about-title h1{
+    margin: 15px 0 1px 10px;
   }
 
 }
 
-
-/* Large Devices */
-@media only screen and (min-width: 1024px) {}
-
 /* XL Devices */
-@media only screen and (min-width: 1440px) {}
+@media only screen and (min-width: 1440px) {
+  .section {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

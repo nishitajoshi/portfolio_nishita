@@ -126,7 +126,7 @@ a:active {
   border-radius: 2px;
   border-bottom: 2px solid #f06b52;
   margin-bottom: 20px;
-  transition-duration: 0.5s opacity;
+  transition: 1s opacity;
 }
 
 .button.project:hover {

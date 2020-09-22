@@ -5,7 +5,6 @@ Secondary (dark blue):#252847
 Secondary (yellow): #FFD984
 Secondary: (light blue):#7DB8C4
 */
-
 * {
   box-sizing: border-box;
 }
@@ -13,7 +12,6 @@ Secondary: (light blue):#7DB8C4
 header {
   background-color: white;
   padding: 10px 0;
-  text-align: center;
   box-shadow: 2px 2px 4px 0px rgba(20, 29, 22, 0.49);
   width: 100%;
   position: fixed;
@@ -25,16 +23,28 @@ header {
 }
 
 main {
-  padding-top: 133px;
+  padding-top: 56px;
 }
 
 nav>ul {
-  list-style-type: none;
-  padding: 0;
+  list-styl-type: none;
+  padding: 0px;
+  margin: 0;
 }
 
-nav>ul>li {
-  display: inline-block;
+.navbar li:not(:last-child) {
+  display: none;
+}
+
+.navbar, .navbar.responsive{
+  position: relative;
+}
+
+.navbar li .icon {
+  position: absolute;
+  right: 0;
+  top: 2px;
+  font-size: 30px;
 }
 
 nav>ul>li>a {
@@ -216,7 +226,6 @@ a:active {
 }
 
 /* animation CSS */
-
 #animate {
   width: 100%;
   max-width: 100%;
@@ -282,6 +291,22 @@ a:active {
     margin-top: 4px;
   }
 
+  nav > ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 1em;
+}
+
+  nav>ul>li {
+    display: inline-block;
+  }
+
+  .navbar li:not(:last-child) {
+    display: inline-block;
+  }
+
+
+
   main {
     padding-top: 99px;
   }
@@ -317,7 +342,7 @@ a:active {
     margin: 5px 20px;
   }
 
-  #about-title h1{
+  #about-title h1 {
     margin: 0 10px;
   }
 }
@@ -329,6 +354,10 @@ a:active {
     margin-left: auto;
     margin-right: auto;
   }
+
+  .navbar li:last-child {
+  display: none;
+}
 
   #skills-title {
     text-align: left;
@@ -356,10 +385,9 @@ a:active {
     margin: 20px 0;
   }
 
-  #about-title h1{
+  #about-title h1 {
     margin: 15px 0 1px 10px;
   }
-
 }
 
 /* XL Devices */

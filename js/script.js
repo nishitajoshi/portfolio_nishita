@@ -1,1 +1,9 @@
-console.log("Hi! I am Nishita")
+
+function menuToggle() {
+  var x = document.getElementById('myNavbar');
+  if (x.className === 'navbar') {
+    x.className += 'responsive';
+  } else {
+    x.className = 'navbar';
+  }
+}

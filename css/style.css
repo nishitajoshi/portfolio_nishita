@@ -27,7 +27,7 @@ main {
 }
 
 nav>ul {
-  list-styl-type: none;
+  list-style-type: none;
   padding: 0px;
   margin: 0;
 }
@@ -36,8 +36,12 @@ nav>ul {
   display: none;
 }
 
-.navbar, .navbar.responsive{
+.navbar, .navbar.responsive {
   position: relative;
+}
+
+.navbar.responsive nav {
+  padding: 24px 0 0;
 }
 
 .navbar li .icon {
@@ -46,6 +50,16 @@ nav>ul {
   top: 2px;
   font-size: 30px;
 }
+
+.navbar.responsive li {
+  display: block;
+  padding: 10px 0;
+  border-top: 1px solid rgba(255, 127, 80, 0.5);
+}
+
+.navbar.responsive li:last-child {
+    display: none;
+  }
 
 nav>ul>li>a {
   padding: 0 15px;
@@ -291,11 +305,11 @@ a:active {
     margin-top: 4px;
   }
 
-  nav > ul {
+  nav>ul {
     list-style-type: none;
     padding: 0;
     margin: 1em;
-}
+  }
 
   nav>ul>li {
     display: inline-block;
@@ -303,9 +317,8 @@ a:active {
 
   .navbar li:not(:last-child) {
     display: inline-block;
+    padding: 0 0 10px;
   }
-
-
 
   main {
     padding-top: 99px;
@@ -356,8 +369,9 @@ a:active {
   }
 
   .navbar li:last-child {
-  display: none;
-}
+    display: none;
+  }
+
 
   #skills-title {
     text-align: left;

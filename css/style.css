@@ -58,7 +58,8 @@ nav>ul {
 }
 
 .navbar.responsive li:last-child {
-    display: none;
+    position: absolute;
+    display: contents;
   }
 
 nav>ul>li>a {

@@ -215,7 +215,7 @@ a:active {
 }
 
 /* budgetsy */
-#title {
+#title-budgetsy {
   background: #47a7a0;
   padding: 60px 20px;
   text-align: center;
@@ -243,6 +243,24 @@ a:active {
   text-align: center;
   padding: 0 35px;
 }
+
+
+
+/* greenscape */
+
+#title-greenscape{
+  background: #435753;
+  padding: 60px 20px;
+  text-align: center;
+  color: white;
+}
+
+#context span{
+  font-weight: bold;
+}
+
+
+
 
 /* animation CSS */
 #animate {

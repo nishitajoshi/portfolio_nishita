@@ -244,27 +244,6 @@ a:active {
   padding: 0 35px;
 }
 
-/* contact */
-input[type=text], select, textarea {
-  width: 100%;
-  padding: 12px;
-  border: 1px solid black;
-  border-radius: 2px;
-  box-sizing: border-box;
-  margin-top: 6px;
-  margin-bottom: 16px;
-  resize: vertical;
-}
-
-input[type=submit] {
-  display: inline-block;
-  background-color: #f06b52;
-  color: #fff;
-  font-weight: 400;
-  padding: 8px;
-  border-radius: 4px;
-}
-
   /* greenscape */
   #title-greenscape {
     background: #435753;

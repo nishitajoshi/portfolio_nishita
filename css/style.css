@@ -244,32 +244,47 @@ a:active {
   padding: 0 35px;
 }
 
-
-
-/* greenscape */
-
-#title-greenscape{
-  background: #435753;
-  padding: 60px 20px;
-  text-align: center;
-  color: white;
-}
-
-#context span{
-  font-weight: bold;
-}
-
-
-
-
-/* animation CSS */
-#animate {
+/* contact */
+input[type=text], select, textarea {
   width: 100%;
-  max-width: 100%;
-  height: auto;
+  padding: 12px;
+  border: 1px solid black;
+  border-radius: 2px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
 }
 
-/* @keyframes color-change {
+input[type=submit] {
+  display: inline-block;
+  background-color: #f06b52;
+  color: #fff;
+  font-weight: 400;
+  padding: 8px;
+  border-radius: 4px;
+}
+
+  /* greenscape */
+  #title-greenscape {
+    background: #435753;
+    padding: 60px 20px;
+    text-align: center;
+    color: white;
+  }
+
+  #context span {
+    font-weight: bold;
+  }
+
+  /* animation CSS */
+  #animate {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+  }
+
+  /* @keyframes color-change {
   0% {
     fill: #edc655;
   }
@@ -286,7 +301,7 @@ a:active {
 .sun {
   animation: 4s color-change infinite alternate linear;
 } */
-/* @keyframes cloud-move {
+  /* @keyframes cloud-move {
   from {
     transform: translate(0, 50px);
   }
@@ -313,122 +328,122 @@ a:active {
 .cloud-back {
   animation: 15s cloud-move-reverse infinite alternate linear;
 } */
-/* Medium Devices */
-@media only screen and (min-width: 640px) {
-  header {
-    text-align: unset;
-    padding: 20px 0 13px;
+  /* Medium Devices */
+  @media only screen and (min-width: 640px) {
+    header {
+      text-align: unset;
+      padding: 20px 0 13px;
+    }
+
+    nav {
+      width: auto;
+      float: right;
+      margin-top: 4px;
+    }
+
+    nav>ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 1em;
+    }
+
+    nav>ul>li {
+      display: inline-block;
+    }
+
+    .navbar li:not(:last-child) {
+      display: inline-block;
+      padding: 0 0 10px;
+    }
+
+    main {
+      padding-top: 99px;
+    }
+
+    body {
+      font-size: 18px;
+    }
+
+    #hero {
+      padding: 40px;
+    }
+
+    .row::after {
+      content: "";
+      clear: both;
+      display: table;
+    }
+
+    .col-md-6 {
+      width: 50%;
+    }
+
+    [class*=col-] {
+      float: left;
+      padding: 0 10px;
+    }
+
+    .information {
+      padding: 20px 100px;
+    }
+
+    .navbar {
+      margin: 5px 20px;
+    }
+
+    #about-title h1 {
+      margin: 0 10px;
+    }
   }
 
-  nav {
-    width: auto;
-    float: right;
-    margin-top: 4px;
+  /* Large Devices */
+  @media only screen and (min-width: 1024px) {
+    .section {
+      max-width: 1200px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .navbar li:last-child {
+      display: none;
+    }
+
+    #skills-title {
+      text-align: left;
+    }
+
+    .col-lg-7 {
+      width: 60%;
+    }
+
+    .col-lg-5 {
+      width: 40%;
+    }
+
+    .navbar {
+      margin: 5px 20px;
+    }
+
+    .row::after {
+      content: "";
+      clear: both;
+      display: table;
+    }
+
+    .column {
+      margin: 20px 0;
+    }
+
+    #about-title h1 {
+      margin: 15px 0 1px 10px;
+    }
   }
 
-  nav>ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 1em;
+  /* XL Devices */
+  @media only screen and (min-width: 1440px) {
+    .section {
+      max-width: 1200px;
+      margin-left: auto;
+      margin-right: auto;
+    }
   }
-
-  nav>ul>li {
-    display: inline-block;
-  }
-
-  .navbar li:not(:last-child) {
-    display: inline-block;
-    padding: 0 0 10px;
-  }
-
-  main {
-    padding-top: 99px;
-  }
-
-  body {
-    font-size: 18px;
-  }
-
-  #hero {
-    padding: 40px;
-  }
-
-  .row::after {
-    content: "";
-    clear: both;
-    display: table;
-  }
-
-  .col-md-6 {
-    width: 50%;
-  }
-
-  [class*=col-] {
-    float: left;
-    padding: 0 10px;
-  }
-
-  .information {
-    padding: 20px 100px;
-  }
-
-  .navbar {
-    margin: 5px 20px;
-  }
-
-  #about-title h1 {
-    margin: 0 10px;
-  }
-}
-
-/* Large Devices */
-@media only screen and (min-width: 1024px) {
-  .section {
-    max-width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  .navbar li:last-child {
-    display: none;
-  }
-
-  #skills-title {
-    text-align: left;
-  }
-
-  .col-lg-7 {
-    width: 60%;
-  }
-
-  .col-lg-5 {
-    width: 40%;
-  }
-
-  .navbar {
-    margin: 5px 20px;
-  }
-
-  .row::after {
-    content: "";
-    clear: both;
-    display: table;
-  }
-
-  .column {
-    margin: 20px 0;
-  }
-
-  #about-title h1 {
-    margin: 15px 0 1px 10px;
-  }
-}
-
-/* XL Devices */
-@media only screen and (min-width: 1440px) {
-  .section {
-    max-width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-}
